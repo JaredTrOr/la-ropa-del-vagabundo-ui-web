@@ -1,0 +1,40 @@
+:root {
+    --main-green: #113E21;
+    --text-white: #FFFF;
+}
+
+* {
+    font-family: 'roboto';
+}
+
+.no-link-style-white {
+    color: var(--text-white);
+    text-decoration: none;
+}
+
+.link-style-white {
+    color: var(--text-white);
+}
+
+.bg-main-green {
+    background-color: var(--main-green);
+}
+
+.input-height {
+    height: 2rem;
+    border-radius: 0 5px 5px 0;
+}
+
+.container-form {
+    border-radius: 5px;
+    background-color: rgb(242, 242, 242);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+}
