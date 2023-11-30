@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap"
 import Button from 'react-bootstrap/Button'
 import landingImage from '../assets/landing.png'
+import { Link } from "react-router-dom"
 
 export function Landing() {
     return (
@@ -11,11 +12,14 @@ export function Landing() {
                         <Col className="d-flex flex-column align-items-center justify-content-center">
                             <div>
                                 <h1 className="title">La ropa mas genial y variada</h1>
-                                <p>Descubre nuestra galeria de ropa</p>
+                                <p>Descubre nuestra galeria de ropa y se parte de nosotros</p>
 
-                                <Button variant="success" type="button">
-                                    Comprar
-                                </Button>
+                                <Link to="/">
+                                    <Button variant="success" type="button">
+                                        Registrar
+                                    </Button>
+                                </Link>
+                                
 
                                 <Button variant="success m-3" type="button">
                                     Ofertas

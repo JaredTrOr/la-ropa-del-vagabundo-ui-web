@@ -1,6 +1,8 @@
 :root {
     --main-green: #113E21;
-    --text-white: #FFFF;
+    --white: #FFFF;
+    --black: #000000;  
+    --brown: #6A4837;
 }
 
 * {
@@ -8,12 +10,17 @@
 }
 
 .no-link-style-white {
-    color: var(--text-white);
+    color: var(--white);
+    text-decoration: none;
+}
+
+.no-link-style-black {
+    color: var(--black);
     text-decoration: none;
 }
 
 .link-style-white {
-    color: var(--text-white);
+    color: var(--white);
 }
 
 .bg-main-green {
@@ -37,4 +44,22 @@
 .title {
     font-size: 3rem;
     font-weight: bold;
+}
+
+.mt-7 {
+    margin-top: 7rem;
+}
+
+.image-card {
+    position: relative;
+}
+
+.heart-card {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.bg-brown {
+    background-color: var(--brown);
 }
