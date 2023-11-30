@@ -1,5 +1,6 @@
 import { Button, Col, Container, Row } from "react-bootstrap"
 import { Collection } from "./Collection"
+import { Link } from "react-router-dom"
 
 export function BestSellers() {
 
@@ -17,9 +18,12 @@ export function BestSellers() {
                 </Col>
 
                 <Col className="d-flex justify-content-end">
-                    <Button variant="outline-success">
-                        Ver más
-                    </Button>
+                    <Link to="/discounts">
+                        <Button variant="outline-success">
+                            Ver más
+                        </Button>
+                    </Link>
+                    
                 </Col>
             </Row>
 

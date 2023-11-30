@@ -21,9 +21,11 @@ export function Landing() {
                                 </Link>
                                 
 
-                                <Button variant="success m-3" type="button">
-                                    Ofertas
-                                </Button>
+                                <Link to="/discounts">
+                                    <Button variant="success m-3" type="button">
+                                        Ofertas
+                                    </Button>
+                                </Link>
                             </div>
                             
                         </Col>

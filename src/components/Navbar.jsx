@@ -1,13 +1,13 @@
 import { Navbar as NavbarBootstrap } from "react-bootstrap"
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form'
+import InputGroup from 'react-bootstrap/InputGroup'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 
 import logo from "../assets/logo.png"
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 export function Navbar () {
     return (
@@ -32,7 +32,9 @@ export function Navbar () {
                             />
                             <i className="fa-regular fa-heart  m-2"></i>
                             <i className="fa-regular fa-user m-2"></i>
-                            <i className="fa-solid fa-bag-shopping m-2"></i>
+                            <Link to="/bag" className="text-dark">
+                                <i className="fa-solid fa-bag-shopping m-2"></i>
+                            </Link>
                         </InputGroup>
                     </div>
                 </Container>
@@ -42,16 +44,25 @@ export function Navbar () {
                 <Container className="pb-3">
                     <Row className="justify-content-md-center">
                         <Col lg="2" className="text-center mt-2">
-                            Hombre <i className="fa-solid fa-caret-down"></i>
+                            <Link to="/discounts" className="no-link-style-black">
+                                Hombre <i className="fa-solid fa-caret-down"></i>
+                            </Link>
+                            
                         </Col>
                         <Col lg="2" className="text-center mt-2">
-                            Mujer <i className="fa-solid fa-caret-down"></i>
+                            <Link to="/discounts" className="no-link-style-black">
+                                Mujer <i className="fa-solid fa-caret-down"></i>
+                            </Link>
                         </Col>
                         <Col lg="2" className="text-center mt-2">
-                            Niños <i className="fa-solid fa-caret-down"></i>
+                            <Link to="/discounts" className="no-link-style-black">
+                                Niños <i className="fa-solid fa-caret-down"></i> 
+                            </Link>
                         </Col>
                         <Col lg="2" className="text-center mt-2">
-                            Crea tu outfit <i className="fa-solid fa-caret-down"></i>
+                            <Link to="/discounts" className="no-link-style-black">
+                                Crea tu outfit <i className="fa-solid fa-caret-down"></i>
+                            </Link>
                         </Col>
                     </Row>
                 </Container>
