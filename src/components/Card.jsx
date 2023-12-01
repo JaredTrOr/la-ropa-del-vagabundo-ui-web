@@ -1,8 +1,13 @@
 import { Col, Container, Row } from "react-bootstrap"
+import { Link } from "react-router-dom"
 
 // eslint-disable-next-line react/prop-types
-export function Card({image, description, price}) {
+export function Card({id, image, description, price}) {
+
+    const linkToClothSelection = `/cloth-selection/${id}`
+
     return (
+        <Link className="no-link-style-black" to={linkToClothSelection}>
         <div className="card image-card">
             <i className="fa-regular fa-heart text-success fa-3x heart-card"></i>
             <div className="card-header text-center">
@@ -28,5 +33,7 @@ export function Card({image, description, price}) {
                 </Container>
             </div>
         </div>
+        </Link>
+        
     )
 }

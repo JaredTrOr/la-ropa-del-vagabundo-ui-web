@@ -20,7 +20,7 @@ function App() {
         <Route path="/discounts" element={<Discounts/>}/>
         <Route path="/bag" element={<Bag/>}/>
         <Route path="/shipment" element={<Shipment/>}/>
-        <Route path="/cloth-selection" element={<ClothSelection/>}/>
+        <Route path="/cloth-selection/:id" element={<ClothSelection/>}/>
         <Route path="/payment" element={<Payment/>}/>
       </Routes>
     </BrowserRouter>

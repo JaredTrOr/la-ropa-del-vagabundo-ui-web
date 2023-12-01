@@ -10,6 +10,7 @@ export function Collection() {
                     (
                         <Col className="col-lg-4 mb-4" key={index}>
                             <Card 
+                                id={object.id}
                                 image={object.image} 
                                 description={object.description} 
                                 price={object.price}
