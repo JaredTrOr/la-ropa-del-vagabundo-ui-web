@@ -8,6 +8,7 @@ import { Bag } from "./pages/Bag"
 import { Shipment } from "./pages/Shipment"
 import { ClothSelection } from "./pages/ClothSelection"
 import { Payment } from "./pages/Payment"
+import { Profile } from './pages/Profile';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/shipment" element={<Shipment/>}/>
         <Route path="/cloth-selection/:id" element={<ClothSelection/>}/>
         <Route path="/payment" element={<Payment/>}/>
+        <Route path="/profile" element={<Profile/>}/>
       </Routes>
     </BrowserRouter>
   )

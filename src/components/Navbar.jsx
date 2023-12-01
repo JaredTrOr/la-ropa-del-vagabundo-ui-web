@@ -1,4 +1,4 @@
-import { Navbar as NavbarBootstrap } from "react-bootstrap"
+import { Button, Navbar as NavbarBootstrap } from "react-bootstrap"
 import Form from 'react-bootstrap/Form'
 import InputGroup from 'react-bootstrap/InputGroup'
 import Container from 'react-bootstrap/Container'
@@ -30,8 +30,18 @@ export function Navbar () {
                                 aria-label="Buscar"
                                 aria-describedby="basic-addon1"
                             />
-                            <i className="fa-regular fa-heart  m-2"></i>
-                            <i className="fa-regular fa-user m-2"></i>
+                            {/* <i className="fa-regular fa-heart  m-2"></i> */}
+
+                            <Link className="ml-3" to="/">
+                                <Button variant="success">
+                                    Registrate
+                                </Button>
+                            </Link>
+
+                            <Link to="/profile" className="text-dark">
+                                <i className="fa-regular fa-user m-2"></i>
+                            </Link>
+
                             <Link to="/bag" className="text-dark">
                                 <i className="fa-solid fa-bag-shopping m-2"></i>
                             </Link>

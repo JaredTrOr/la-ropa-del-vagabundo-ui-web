@@ -1,5 +1,5 @@
 import { Button, Col, Container, Row } from "react-bootstrap"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { clothes } from "../assets/src/clothes-information"
 import { Navbar } from "../components/Navbar"
 
@@ -70,9 +70,11 @@ export function ClothSelection() {
                                 </Col>
                             </Row>
 
-                            <Button className="mt-5 p-3" variant="success">
-                                Agregar a la bolsa
-                            </Button>
+                            <Link to="/bag">
+                                <Button className="mt-5 p-3" variant="success">
+                                    Agregar a la bolsa
+                                </Button>
+                            </Link>
                         </Container>
                     </Col>
                 </Row>
