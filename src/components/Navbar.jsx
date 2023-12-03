@@ -68,7 +68,7 @@ export function Navbar () {
                             </Link>
                         </Col>
                         <Col lg="2" className="text-center mt-2">
-                            <Link to="/discounts" className="no-link-style-black">
+                            <Link to="/chatbot" className="no-link-style-black">
                                 Crea tu outfit <i className="fa-solid fa-caret-down"></i>
                             </Link>
                         </Col>

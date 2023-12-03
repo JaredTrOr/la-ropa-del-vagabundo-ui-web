@@ -12,6 +12,7 @@ import { Profile } from './pages/Profile';
 import { MenClothes } from './pages/MenClothes';
 import { WomenClothes } from './pages/WomenClothes';
 import { ChildrenClothes } from './pages/ChildrenClothes';
+import { Chatbot } from './pages/Chatbot';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/cloth-selection/:id" element={<ClothSelection/>}/>
         <Route path="/payment" element={<Payment/>}/>
         <Route path="/profile" element={<Profile/>}/>
+        <Route path="/chatbot" element={<Chatbot/>}/>
       </Routes>
     </BrowserRouter>
   )

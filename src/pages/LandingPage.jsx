@@ -6,6 +6,7 @@ import { BestSellers } from "../components/BestSellers"
 import { Button, Container, Row } from "react-bootstrap"
 import { Footer } from "../components/Footer"
 import chatbotimage from "../assets/chatbot-image.png"
+import { Link } from "react-router-dom"
 
 export function LandingPage() {
     return (
@@ -22,7 +23,9 @@ export function LandingPage() {
                         <h2 className="bold text-light">¿Por qué elegirnos?</h2>
                         <p className="text-light">Sistema generador de outfits con nuestro chatbot</p>
 
-                        <Button variant="outline-light" className="btn-chatbot">Click para descubrir</Button>
+                        <Link to="/chatbot">
+                            <Button variant="outline-light" className="btn-chatbot">Click para descubrir</Button>
+                        </Link>
                     </Row>
                 </Container>
             </div>
