@@ -1,6 +1,7 @@
 import { Button, Col, Container, Row } from "react-bootstrap"
 import { Collection } from "./Collection"
 import { Link } from "react-router-dom"
+import { discountClothes } from '../assets/src/clothes-information'
 
 export function BestSellers() {
 
@@ -27,7 +28,7 @@ export function BestSellers() {
                 </Col>
             </Row>
 
-            <Collection/>
+            <Collection clothes={discountClothes}/>
             
         </Container>
     )

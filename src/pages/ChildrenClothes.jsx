@@ -3,17 +3,17 @@ import { Navbar } from "../components/Navbar"
 import { Collection } from "../components/Collection"
 import { Footer } from "../components/Footer"
 import { Header } from "../components/Header"
-import { discountClothes } from "../assets/src/clothes-information"
+import { childrenClothes } from "../assets/src/children-clothes-info"
 
-export function Discounts() {
+export function ChildrenClothes() {
     return (
         <>
             <Header/>
             <Navbar/>
             <Container className="mt-7"> 
             <Row className="text-center">
-                <h2 className="bold">Ofertas</h2>
-                <p>Rebajas de nuestra galeria</p>
+                <h2 className="bold">Ropa de niño</h2>
+                <p>Rebajas de nuestra galeria de ropa de niños</p>
             </Row>
 
             <Row className="mt-5">
@@ -27,8 +27,8 @@ export function Discounts() {
                 </Col>
             </Row>
 
-            <Collection clothes={discountClothes}/>
-            <Collection clothes={discountClothes}/>
+            <Collection clothes={childrenClothes}/>
+            <Collection clothes={childrenClothes}/>
             
             <Container>
                 <Row className="mt-5 text-center">

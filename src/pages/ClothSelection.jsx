@@ -1,13 +1,19 @@
 import { Button, Col, Container, Row } from "react-bootstrap"
 import { Link, useParams } from "react-router-dom"
-import { clothes } from "../assets/src/clothes-information"
+import { discountClothes } from "../assets/src/clothes-information"
+import { menClothes } from "../assets/src/men-clothes-info"
+import { womenClothes } from "../assets/src/women-clothes-info"
+import { childrenClothes } from "../assets/src/children-clothes-info"
 import { Navbar } from "../components/Navbar"
 
 export function ClothSelection() {
 
     const { id } = useParams()
     
-    const cloth = clothes.find((object) => object.id === parseInt(id))
+    const cloth = discountClothes.find((object) => object.id === parseInt(id)) || 
+    menClothes.find((object) => object.id === parseInt(id)) || 
+    womenClothes.find((object) => object.id === parseInt(id)) || 
+    childrenClothes.find((object) => object.id === parseInt(id))
 
     return (
         <>

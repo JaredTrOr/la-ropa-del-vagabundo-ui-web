@@ -4,8 +4,6 @@ import InputGroup from 'react-bootstrap/InputGroup'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-
-
 import logo from "../assets/logo.png"
 import { Link } from "react-router-dom"
 
@@ -54,18 +52,18 @@ export function Navbar () {
                 <Container className="pb-3">
                     <Row className="justify-content-md-center">
                         <Col lg="2" className="text-center mt-2">
-                            <Link to="/discounts" className="no-link-style-black">
+                            <Link to="/men-clothes" className="no-link-style-black">
                                 Hombre <i className="fa-solid fa-caret-down"></i>
                             </Link>
                             
                         </Col>
                         <Col lg="2" className="text-center mt-2">
-                            <Link to="/discounts" className="no-link-style-black">
+                            <Link to="/women-clothes" className="no-link-style-black">
                                 Mujer <i className="fa-solid fa-caret-down"></i>
                             </Link>
                         </Col>
                         <Col lg="2" className="text-center mt-2">
-                            <Link to="/discounts" className="no-link-style-black">
+                            <Link to="/children-clothes" className="no-link-style-black">
                                 Niños <i className="fa-solid fa-caret-down"></i> 
                             </Link>
                         </Col>

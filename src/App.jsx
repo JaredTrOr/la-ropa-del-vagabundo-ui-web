@@ -9,6 +9,9 @@ import { Shipment } from "./pages/Shipment"
 import { ClothSelection } from "./pages/ClothSelection"
 import { Payment } from "./pages/Payment"
 import { Profile } from './pages/Profile';
+import { MenClothes } from './pages/MenClothes';
+import { WomenClothes } from './pages/WomenClothes';
+import { ChildrenClothes } from './pages/ChildrenClothes';
 
 function App() {
 
@@ -18,8 +21,11 @@ function App() {
         <Route path="/" element={<SignUp/>}/>
         <Route path="/landing" element={<LandingPage/>}/>
         <Route path="/log-in" element={<Login/>}/>
-        <Route path="/discounts" element={<Discounts/>}/>
         <Route path="/bag" element={<Bag/>}/>
+        <Route path="/discounts" element={<Discounts/>}/>
+        <Route path="/men-clothes" element={<MenClothes/>}/>
+        <Route path="/women-clothes" element={<WomenClothes/>}/>
+        <Route path="/children-clothes" element={<ChildrenClothes/>}/>
         <Route path="/shipment" element={<Shipment/>}/>
         <Route path="/cloth-selection/:id" element={<ClothSelection/>}/>
         <Route path="/payment" element={<Payment/>}/>

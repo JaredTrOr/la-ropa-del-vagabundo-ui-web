@@ -1,11 +1,13 @@
 import { Col, Row } from "react-bootstrap";
-import { clothes } from "../assets/src/clothes-information";
 import { Card } from "./Card";
 
-export function Collection() {
+// eslint-disable-next-line react/prop-types
+export function Collection( {clothes} ) {
+    console.log(clothes)
     return (
         <Row className="mt-5">
             {
+                // eslint-disable-next-line react/prop-types
                 clothes.map((object, index) => 
                     (
                         <Col className="col-lg-4 mb-4" key={index}>
